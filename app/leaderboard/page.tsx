@@ -36,7 +36,6 @@ export default function LeaderboardPage() {
       </p>
 
       {loading && <div className="spinner" />}
-
       {error && <div className="alert alert-error">⚠️ {error}</div>}
 
       {!loading && !error && projects.length === 0 && (
@@ -64,16 +63,7 @@ export default function LeaderboardPage() {
                   <td>{rankLabel(i)}</td>
                   <td style={{ fontWeight: 600 }}>{p.kid_name}</td>
                   <td>{p.title}</td>
-                  <td>
-                    
-                      href={p.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{ fontSize: ".85rem" }}
-                    >
-                      Visit &rarr;
-                    </a>
-                  </td>
+                  <td><a href={p.url} target="_blank" rel="noopener noreferrer" style={{ fontSize: ".85rem" }}>Visit</a></td>
                   <td style={{ textAlign: "right" }}>
                     <span className="votes-pill">⭐ {p.votes}</span>
                   </td>
