@@ -71,7 +71,7 @@ export default function LeaderboardPage() {
                       rel="noopener noreferrer"
                       style={{ fontSize: ".85rem" }}
                     >
-                      Visit ↗
+                      Visit &rarr;
                     </a>
                   </td>
                   <td style={{ textAlign: "right" }}>
